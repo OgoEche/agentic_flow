@@ -1,40 +1,48 @@
-# Igbo Origins
+# Semantic Constellation
 
-A structured research initiative to collect, analyse, and synthesise myths, legends, and cosmological beliefs from Igbo towns and local government areas across multiple states.
+A cognitive interface for exploring Igbo cosmological knowledge — part of the [Igbo Origins](../igboorigins) research initiative.
 
-## Overview
+## What It Is
 
-**Igbo Origins** is a research project dedicated to the systematic documentation and scholarly analysis of indigenous Igbo oral traditions, creation myths, ancestral legends, and cosmological worldviews. The project draws from diverse Igbo communities spread across multiple states in Nigeria, preserving cultural heritage and enabling comparative study across regions.
+Semantic Constellation is not a search engine.
 
-## Objectives
+It is a spatial, interactive map where **meaning becomes visual proximity**. Documents that share cosmological themes cluster together in space. Explicit cultural relationships are drawn as edges between nodes. A natural-language question lights up the parts of the space most relevant to it.
 
-- Collect primary and secondary sources of Igbo myths, legends, and cosmological beliefs
-- Map beliefs and traditions to specific towns and local government areas (LGAs)
-- Identify patterns, divergences, and shared themes across Igbo sub-groups
-- Synthesise findings into accessible research outputs (reports, datasets, visualisations)
-- Preserve oral traditions at risk of being lost to modernisation
+The interface treats Igbo cosmological knowledge as a living graph — where myths, deities, places, and ritual narratives are not isolated entries to be retrieved, but constellations of meaning to be navigated.
 
-## Scope
+## Core Concepts
 
-- **Geographic coverage**: Igbo towns and LGAs across Anambra, Imo, Enugu, Ebonyi, Abia, and Delta states
-- **Thematic focus**: Creation myths, origin stories, deity systems, ancestral cosmology, ritual narratives
-- **Sources**: Oral interviews, ethnographic records, historical texts, archival materials
+### Spatial Proximity = Semantic Similarity
+Documents, myths, and concepts are embedded into a high-dimensional semantic space. What appears close together, *means* close together — shared cosmological themes, overlapping deity systems, related origin stories.
 
-## Structure
+### Edges = Explicit Cultural Relationships
+Beyond similarity, known relationships are drawn explicitly: a deity's domain, a town's founding myth, a ritual's cosmological context. These edges encode cultural structure that pure similarity cannot capture.
+
+### Query Illumination
+A natural-language question does not return a list of results. It illuminates — casting light across the map, brightening nodes and clusters most relevant to the question, allowing the user to follow meaning spatially rather than linearly.
+
+## Design Principles
+
+- **Spatial over sequential** — knowledge is navigated, not scrolled
+- **Relational over retrieval** — meaning emerges from connections, not isolated documents
+- **Cultural fidelity** — structure respects indigenous categories, not imposed taxonomies
+- **Exploratory by default** — the interface invites wandering as much as directed inquiry
+
+## Architecture (Planned)
 
 ```
-igboorigins/
-├── data/           # Raw and processed research data
-├── sources/        # Primary and secondary source materials
-├── analysis/       # Analytical scripts and notebooks
-├── reports/        # Synthesised findings and publications
-└── maps/           # Geographic mapping of beliefs by LGA/town
+semantic_constellation/
+├── embeddings/       # Document and concept vector representations
+├── graph/            # Explicit relationship graph (nodes, edges, metadata)
+├── interface/        # Spatial visualisation and interaction layer
+├── query/            # Natural-language query processing and illumination logic
+└── corpus/           # Source documents from the Igbo Origins corpus
 ```
 
-## Contributing
+## Relationship to Igbo Origins
 
-Contributions from researchers, historians, cultural practitioners, and community members are welcome. Please open an issue or submit a pull request with sources, corrections, or additions.
+Semantic Constellation is the cognitive interface layer built on top of the Igbo Origins research corpus. Igbo Origins collects and structures the knowledge; Semantic Constellation makes it explorable.
 
-## License
+## Status
 
-This project is open for academic and cultural preservation purposes. See LICENSE for details.
+Early design and architecture phase. Contributions to corpus structure, graph schema, and interface design are welcome.
