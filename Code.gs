@@ -18,7 +18,7 @@ function getConfig() {
     GEMINI_API_KEY: PropertiesService.getScriptProperties().getProperty('GEMINI_API_KEY'),
 
     // Gemini model to use
-    GEMINI_MODEL: 'gemini-2.0-flash',
+    GEMINI_MODEL: 'gemini-2.5-flash',
 
     // Google Drive folder IDs (get from the URL: drive.google.com/drive/folders/<THIS_ID>)
     TRANSCRIPT_FOLDER_ID: PropertiesService.getScriptProperties().getProperty('TRANSCRIPT_FOLDER_ID'),       // Where Meet transcripts land
